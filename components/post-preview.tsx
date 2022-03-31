@@ -22,22 +22,20 @@ const PostPreview = ({
   slug,
 }: Props) => {
   return (
-    <div>
-      <div className="mb-5">
-        <CoverImage slug={slug} title={title} src={coverImage} />
-      </div>
-      <h3 className="text-3xl mb-3 leading-snug">
         <Link as={`/posts/${slug}`} href="/posts/[slug]">
-          <a className="hover:underline">{title}</a>
+          <a className="w-full">
+            <div className="w-full">
+              <div className="flex flex-col justify-between md:flex-row">
+                <h4 className="w-full text-lg font-medium text-gray-900 md:text-xl">
+                  {title}
+                </h4>
+              </div>
+            </div>
+            <div className="text-lg mb-4">
+              <DateFormatter dateString={date} />
+            </div>
+          </a>
         </Link>
-      </h3>
-      <div className="text-lg mb-4">
-        <DateFormatter dateString={date} />
-      </div>
-      <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
-      <Avatar name={author.name} picture={author.picture} />
-    </div>
   )
 }
-
 export default PostPreview
