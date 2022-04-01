@@ -26,24 +26,21 @@ const Post = ({ post, morePosts, preview }: Props) => {
   return (
     <Layout preview={preview}>
       <Container>
-        <Header />
         {router.isFallback ? (
           <PostTitle>Loading…</PostTitle>
         ) : (
           <>
-            <article className="mb-32">
+            <article className="flex flex-col items-start justify-center w-full max-w-2xl mx-auto mb-16">
               <Head>
                 <title>
-                  {post.title} | Next.js Blog Example with {CMS_NAME}
+                  {post.title}
                 </title>
               </Head>
-              <PostHeader
+              <PostBody
+                content={post.content}
                 title={post.title}
-                coverImage={post.coverImage}
-                date={post.date}
-                author={post.author}
+                publishedAt={post.date}
               />
-              <PostBody content={post.content} />
             </article>
           </>
         )}
