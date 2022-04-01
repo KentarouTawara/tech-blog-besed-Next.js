@@ -24,15 +24,15 @@ const PostPreview = ({
   return (
         <Link as={`/posts/${slug}`} href="/posts/[slug]">
           <a className="w-full">
-            <div className="w-full">
+            <div className="text-sm">
+              <DateFormatter dateString={date} />
+            </div>
+            <div className="w-full mb-4">
               <div className="flex flex-col justify-between md:flex-row">
                 <h4 className="w-full text-lg font-medium text-gray-900 md:text-xl">
                   {title}
                 </h4>
               </div>
-            </div>
-            <div className="text-lg mb-4">
-              <DateFormatter dateString={date} />
             </div>
           </a>
         </Link>
