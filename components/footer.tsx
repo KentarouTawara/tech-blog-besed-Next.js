@@ -2,7 +2,12 @@ import Container from './container'
 import Link from 'next/link'
 import { EXAMPLE_PATH } from '../lib/constants'
 
-const ExternalLink = ({ href, children }) => (
+type Props = {
+  href: string
+  children: string
+}
+
+const ExternalLink = ({ href, children } : Props) => (
   <a
     className="text-gray-500 hover:text-gray-600 transition"
     target="_blank"
