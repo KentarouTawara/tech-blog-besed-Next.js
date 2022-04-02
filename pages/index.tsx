@@ -13,13 +13,12 @@ type Props = {
 }
 
 const Index = ({ allPosts }: Props) => {
-  const heroPost = allPosts[0]
-  const Posts = allPosts.slice(1)
+  const Posts = allPosts
   return (
     <>
       <Layout>
         <Head>
-          <title>Next.js Blog Example with {CMS_NAME}</title>
+          <title>tawarablog</title>
         </Head>
         <Container>
           <div className="flex flex-col items-start justify-center max-w-2xl mx-auto mb-16">

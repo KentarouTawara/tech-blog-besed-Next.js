@@ -30,7 +30,7 @@ const Post = ({ post, morePosts, preview }: Props) => {
           <PostTitle>Loading…</PostTitle>
         ) : (
           <>
-            <article className="flex flex-col items-start justify-center w-full max-w-2xl mx-auto mb-16">
+            <article className="flex flex-col items-start justify-center w-full max-w-2xl mx-auto mb-8">
               <Head>
                 <title>
                   {post.title}

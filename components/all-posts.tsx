@@ -8,7 +8,7 @@ type Props = {
 const AllPosts = ({ posts }: Props) => {
   return (
     <section>
-      <h2 className="mt-8 mb-4 text-2xl font-bold tracking-tight text-black md:text-4xl">
+      <h2 className="mt-8 mb-6 text-2xl font-bold tracking-tight text-black md:text-4xl">
         All Posts
       </h2>
       <div className="">
