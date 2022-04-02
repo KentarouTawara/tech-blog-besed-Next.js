@@ -13,7 +13,7 @@ author:
 
 `find_or_create_by`ってブロックを取れるんですね。
 
-```ruby:title=ruby
+```ruby
 User.find_or_create_by!(email: "hoge@example.com") do |user|
   user.name = "hoge"
 end
