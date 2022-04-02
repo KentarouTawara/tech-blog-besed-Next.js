@@ -10,8 +10,8 @@ type Props = {
 
 const PostBody = ({ content, title, publishedAt }: Props) => {
   return (
-    <article className="flex flex-col items-start justify-center w-full max-w-2xl mx-auto mb-16">
-      <h1 className="mb-4 text-3xl font-bold tracking-tight text-black md:text-5xl">
+    <article className="flex flex-col items-start justify-center w-full max-w-2xl mx-auto mb-2">
+      <h1 className="mb-4 text-3xl font-bold tracking-tight text-black md:text-3xl">
         {title}
       </h1>
       <p className="text-sm text-gray-700">
