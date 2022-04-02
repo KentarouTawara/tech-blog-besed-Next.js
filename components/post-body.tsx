@@ -1,6 +1,7 @@
 import { parseISO, format } from 'date-fns';
 import markdownStyles from './markdown-styles.module.css'
 import Image from 'next/image';
+import DateFormatter from './date-formatter'
 
 type Props = {
   content: string
@@ -15,7 +16,7 @@ const PostBody = ({ content, title, publishedAt }: Props) => {
         {title}
       </h1>
       <p className="text-sm text-gray-700">
-        {format(parseISO(publishedAt), 'MMMM dd, yyyy')}
+        <DateFormatter dateString={publishedAt} />
       </p>
       <div
         className="w-full mt-8 prose dark:prose-dark max-w-none"
