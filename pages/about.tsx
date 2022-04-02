@@ -34,8 +34,8 @@ export default function About() {
                   </li>
                   <li>
                     Website:{' '}
-                    <Link href="https://tech-blog-besed-next-js.vercel.app">
-                      <a>https://tech-blog-besed-next-js.vercel.app/</a>
+                    <Link href="https://www.kentaroutawara.com">
+                      <a>https://www.kentaroutawara.com</a>
                     </Link>
                   </li>
                 </ul>
