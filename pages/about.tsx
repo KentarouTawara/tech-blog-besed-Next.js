@@ -33,14 +33,17 @@ export default function About() {
                     Wantedly: <a href="https://www.wantedly.com/id/kentarou_tawara_b">@kentarotawara</a>
                   </li>
                   <li>
+                    note: <a href="https://note.com/kentarotawara">@kentarotawara</a>
+                  </li>
+                  <li>
                     Website:{' '}
                     <Link href="https://www.kentaroutawara.com">
                       <a>https://www.kentaroutawara.com</a>
                     </Link>
                   </li>
                 </ul>
-                <h2>経歴</h2>
-                <h3>準備中</h3>
+                <h2>学歴・経歴</h2>
+                <p>準備中</p>
               </div>
             </div>
           </div>
